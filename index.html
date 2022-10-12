@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(255, 251, 0);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+            /* font-size: larger; */
+            font-weight: bold;
+        }
+
+        header ul {
+            display: flex;
+        }
+
+        header ul li {
+            list-style: none;
+            margin: 0px 10px;
+            padding: 20px 0px;
+        }
+
+        .dropdown {
+            position: relative;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .dropdown>a {
+            padding: 0px 30px;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            background-color: orangered;
+            min-width: 130px;
+            display: none;
+            border-radius: 20px;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: rgb(0, 208, 255);
+        }
+        
+
+        .dropdown-menu ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand-logo">
+            <img height="60" src="https://xltech.co.in/wp-content/uploads/2020/01/logo.png" alt="">
+        </div>
+        <div class="cta">
+            <ul>
+                <li class="dropdown">
+                    <a href="#about">ABOUT </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>About 1</li>
+                            <li>About 2</li>
+                            <li>About 3</li>
+                            <li>About 4</li>
+                           
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#faqs">FAQs</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>FAQ 1</li>
+                            <li>FAQ 2</li>
+                            <li>FAQ 3</li>
+                            <li>FAQ 4</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact">CONTACT US</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li> XYZ-1245</li>
+                            <li> XYZ-1245</li>
+                            <li> XYZ-1245</li>
+                            <li> XYZ-1245</li>
+                            
+                        
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#Help">Profile</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>My Account</li>
+                            <li>Edit Profile</li>
+                            <li>Logout</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    </body>
+
+</html>
